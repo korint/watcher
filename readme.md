@@ -3,7 +3,7 @@
 ## Install
 
 <pre>
-  npm install watch
+  npm install -g git://github.com/Wikimapia/watcher.git
 </pre>
 
 ## Purpose
@@ -12,6 +12,11 @@ Module is aimed to make easier the simple automation of watching of directory tr
 
 ## Usage
 
+<pre>
+  $ watcher -i 250 -d . -a 'echo $file was $action';
+</pre>
+
+Args:
 <pre>
     --directory, -d  Define the root directory to watch, if this is not defined
                    the program will use the current working directory.
