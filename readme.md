@@ -1,4 +1,4 @@
-# `watch` — Utility for watching file trees in node.js
+# watcher — Utility for watching file trees in node.js
 
 ## Install
 
