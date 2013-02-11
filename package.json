@@ -1,0 +1,29 @@
+{
+	"name": "watcher",
+	"description": "Utilities for watching file trees.",
+	"tags": ["util", "utility", "fs", "files", "watch"],
+	"version": "0.0.1",
+	"homepage": "https://github.com/wikimapia/watch",
+	"bugs": {
+		"url": "https://github.com/wikimapia/watch/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/wikimapia/watch.git"
+	},
+	"author": "Alexander Milevski <info@w8r.name>",
+	"directories": {
+		"lib": "lib"
+	},
+	"main": "./main",
+	"bin": {
+		"watch": "cli.js"
+	},
+	"dependencies": {
+		"optimist": ">=0.2.6 <0.3"
+	},
+	"license": "WTFPL",
+	"engine": {
+		"node": ">=0.4.0"
+	}
+}
