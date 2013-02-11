@@ -3,13 +3,13 @@
 	"description": "Utilities for watching file trees.",
 	"tags": ["util", "utility", "fs", "files", "watch"],
 	"version": "0.0.1",
-	"homepage": "https://github.com/wikimapia/watch",
+	"homepage": "https://github.com/wikimapia/watcher",
 	"bugs": {
-		"url": "https://github.com/wikimapia/watch/issues"
+		"url": "https://github.com/wikimapia/watcher/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/wikimapia/watch.git"
+		"url": "git://github.com/wikimapia/watcher.git"
 	},
 	"author": "Alexander Milevski <info@w8r.name>",
 	"directories": {
@@ -17,7 +17,7 @@
 	},
 	"main": "./main",
 	"bin": {
-		"watch": "cli.js"
+		"watcher": "cli.js"
 	},
 	"dependencies": {
 		"optimist": ">=0.2.6 <0.3"

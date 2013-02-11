@@ -1,0 +1,453 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'git://github.com/Wikimapia/watcher.git' ]
+2 info using npm@1.2.10
+3 info using node@v0.8.19
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'git://github.com/Wikimapia/watcher.git', null ]
+7 verbose cache add name=undefined spec="git://github.com/Wikimapia/watcher.git" args=["git://github.com/Wikimapia/watcher.git",null]
+8 verbose parsed url { protocol: 'git:',
+8 verbose parsed url   slashes: true,
+8 verbose parsed url   host: 'github.com',
+8 verbose parsed url   hostname: 'github.com',
+8 verbose parsed url   href: 'git://github.com/Wikimapia/watcher.git',
+8 verbose parsed url   pathname: '/Wikimapia/watcher.git',
+8 verbose parsed url   path: '/Wikimapia/watcher.git' }
+9 silly lockFile 6b707cf0-github-com-Wikimapia-watcher-git git://github.com/Wikimapia/watcher.git
+10 verbose lock git://github.com/Wikimapia/watcher.git /Users/w8r/.npm/6b707cf0-github-com-Wikimapia-watcher-git.lock
+11 verbose addRemoteGit [ 'git://github.com/Wikimapia/watcher.git', 'master' ]
+12 silly exec git "clone" "--mirror" "git://github.com/Wikimapia/watcher.git" "/Users/w8r/.npm/_git-remotes/git-github-com-Wikimapia-watcher-git-6b707cf0"
+13 silly git,clone,--mirror,git://github.com/Wikimapia/watcher.git,/Users/w8r/.npm/_git-remotes/git-github-com-Wikimapia-watcher-git-6b707cf0, spawning
+14 verbose git clone git://github.com/Wikimapia/watcher.git Cloning into bare repository '/Users/w8r/.npm/_git-remotes/git-github-com-Wikimapia-watcher-git-6b707cf0'...
+15 silly exec git "fetch" "-a" "origin"
+16 silly git,fetch,-a,origin,/Users/w8r/.npm/_git-remotes/git-github-com-Wikimapia-watcher-git-6b707cf0 spawning
+17 silly exec git "rev-list" "-n1" "master"
+18 silly git,rev-list,-n1,master,/Users/w8r/.npm/_git-remotes/git-github-com-Wikimapia-watcher-git-6b707cf0 spawning
+19 verbose git rev-list -n1 master e9af840787787834c1c4cb9f0a4bc2c07cbd21f5
+20 verbose resolved git url git://github.com/Wikimapia/watcher.git#e9af840787787834c1c4cb9f0a4bc2c07cbd21f5
+21 verbose git fetch -a origin (git://github.com/Wikimapia/watcher.git)
+22 verbose tar unpack /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/tmp.tgz
+23 silly lockFile 2ed6429e-39779-0-5586122898384929-package /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package
+24 verbose lock /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package /Users/w8r/.npm/2ed6429e-39779-0-5586122898384929-package.lock
+25 silly lockFile 90c92ce8-39779-0-5586122898384929-tmp-tgz /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/tmp.tgz
+26 verbose lock /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/tmp.tgz /Users/w8r/.npm/90c92ce8-39779-0-5586122898384929-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry
+29 silly gunzTarPerm modified mode [ '', 509, 493 ]
+30 silly gunzTarPerm extractEntry .gitignore
+31 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+32 silly gunzTarPerm extractEntry LICENSE
+33 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+34 silly gunzTarPerm extractEntry cli.js
+35 silly gunzTarPerm modified mode [ 'cli.js', 436, 420 ]
+36 silly gunzTarPerm extractEntry main.js
+37 silly gunzTarPerm modified mode [ 'main.js', 436, 420 ]
+38 silly gunzTarPerm extractEntry package.json
+39 silly gunzTarPerm modified mode [ 'package.json', 509, 493 ]
+40 silly gunzTarPerm extractEntry readme.md
+41 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+42 silly gunzTarPerm extractEntry test/
+43 silly gunzTarPerm modified mode [ 'test/', 509, 493 ]
+44 silly gunzTarPerm extractEntry test/dir/
+45 silly gunzTarPerm modified mode [ 'test/dir/', 509, 493 ]
+46 silly gunzTarPerm extractEntry test/dir/subdir/
+47 silly gunzTarPerm modified mode [ 'test/dir/subdir/', 509, 493 ]
+48 silly gunzTarPerm extractEntry test/dir/subdir/file.txt
+49 silly gunzTarPerm modified mode [ 'test/dir/subdir/file.txt', 436, 420 ]
+50 verbose read json /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package/package.json
+51 silly lockFile 2ed6429e-39779-0-5586122898384929-package /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package
+52 silly lockFile 2ed6429e-39779-0-5586122898384929-package /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package
+53 silly lockFile 90c92ce8-39779-0-5586122898384929-tmp-tgz /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/tmp.tgz
+54 silly lockFile 90c92ce8-39779-0-5586122898384929-tmp-tgz /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/tmp.tgz
+55 verbose from cache /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package/package.json
+56 verbose tar pack [ '/Users/w8r/.npm/watcher/0.0.1/package.tgz',
+56 verbose tar pack   '/var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package' ]
+57 verbose tarball /Users/w8r/.npm/watcher/0.0.1/package.tgz
+58 verbose folder /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package
+59 silly lockFile 2ed6429e-39779-0-5586122898384929-package /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package
+60 verbose lock /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package /Users/w8r/.npm/2ed6429e-39779-0-5586122898384929-package.lock
+61 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+62 verbose lock /Users/w8r/.npm/watcher/0.0.1/package.tgz /Users/w8r/.npm/2e362683-8r-npm-watcher-0-0-1-package-tgz.lock
+63 silly lockFile 2ed6429e-39779-0-5586122898384929-package /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package
+64 silly lockFile 2ed6429e-39779-0-5586122898384929-package /var/folders/9_/s8qvfk0d4l36qhx3phmmj00h0000gn/T/npm-22824/1360624939779-0.5586122898384929/package
+65 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+66 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+67 silly lockFile bca45ad5-rs-w8r-npm-watcher-0-0-1-package /Users/w8r/.npm/watcher/0.0.1/package
+68 verbose lock /Users/w8r/.npm/watcher/0.0.1/package /Users/w8r/.npm/bca45ad5-rs-w8r-npm-watcher-0-0-1-package.lock
+69 silly lockFile bca45ad5-rs-w8r-npm-watcher-0-0-1-package /Users/w8r/.npm/watcher/0.0.1/package
+70 silly lockFile bca45ad5-rs-w8r-npm-watcher-0-0-1-package /Users/w8r/.npm/watcher/0.0.1/package
+71 verbose tar unpack /Users/w8r/.npm/watcher/0.0.1/package.tgz
+72 silly lockFile bca45ad5-rs-w8r-npm-watcher-0-0-1-package /Users/w8r/.npm/watcher/0.0.1/package
+73 verbose lock /Users/w8r/.npm/watcher/0.0.1/package /Users/w8r/.npm/bca45ad5-rs-w8r-npm-watcher-0-0-1-package.lock
+74 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+75 verbose lock /Users/w8r/.npm/watcher/0.0.1/package.tgz /Users/w8r/.npm/2e362683-8r-npm-watcher-0-0-1-package-tgz.lock
+76 silly gunzTarPerm modes [ '755', '644' ]
+77 silly gunzTarPerm extractEntry package.json
+78 silly gunzTarPerm extractEntry .npmignore
+79 silly gunzTarPerm extractEntry LICENSE
+80 silly gunzTarPerm extractEntry cli.js
+81 silly gunzTarPerm extractEntry main.js
+82 silly gunzTarPerm extractEntry readme.md
+83 silly gunzTarPerm extractEntry test/dir/subdir/file.txt
+84 verbose read json /Users/w8r/.npm/watcher/0.0.1/package/package.json
+85 silly lockFile bca45ad5-rs-w8r-npm-watcher-0-0-1-package /Users/w8r/.npm/watcher/0.0.1/package
+86 silly lockFile bca45ad5-rs-w8r-npm-watcher-0-0-1-package /Users/w8r/.npm/watcher/0.0.1/package
+87 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+88 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+89 silly shasum updated bytes 3078
+90 info shasum 7f138bb2eee8c1ec26476aa1f1e6af141b8ec26f
+90 info shasum /Users/w8r/.npm/watcher/0.0.1/package.tgz
+91 verbose from cache /Users/w8r/.npm/watcher/0.0.1/package/package.json
+92 verbose chmod /Users/w8r/.npm/watcher/0.0.1/package.tgz 644
+93 verbose chown /Users/w8r/.npm/watcher/0.0.1/package.tgz [ 501, 20 ]
+94 silly lockFile 6b707cf0-github-com-Wikimapia-watcher-git git://github.com/Wikimapia/watcher.git
+95 silly lockFile 6b707cf0-github-com-Wikimapia-watcher-git git://github.com/Wikimapia/watcher.git
+96 silly resolved [ { name: 'watcher',
+96 silly resolved     description: 'Utilities for watching file trees.',
+96 silly resolved     tags: [ 'util', 'utility', 'fs', 'files', 'watch' ],
+96 silly resolved     version: '0.0.1',
+96 silly resolved     homepage: 'https://github.com/wikimapia/watch',
+96 silly resolved     bugs: { url: 'https://github.com/wikimapia/watch/issues' },
+96 silly resolved     repository: { type: 'git', url: 'git://github.com/wikimapia/watch.git' },
+96 silly resolved     author: { name: 'Alexander Milevski', email: 'info@w8r.name' },
+96 silly resolved     directories: { lib: 'lib' },
+96 silly resolved     main: './main',
+96 silly resolved     bin: { watch: 'cli.js' },
+96 silly resolved     dependencies: { optimist: '>=0.2.6 <0.3' },
+96 silly resolved     license: 'WTFPL',
+96 silly resolved     engine: { node: '>=0.4.0' },
+96 silly resolved     readme: '# watcher — Utility for watching file trees in node.js\n\n## Install\n\n<pre>\n  npm install -g git://github.com/Wikimapia/watcher.git\n</pre>\n\n## Purpose\n\nModule is aimed to make easier the simple automation of watching of directory trees easier.\n\n## Usage\n\n<pre>\n  $ watcher -i 250 -d . -a \'echo $file was $action\';\n</pre>\n\nArgs:\n<pre>\n    --directory, -d  Define the root directory to watch, if this is not defined\n                   the program will use the current working directory.\n  --created, -c    Command to handle created files                              \n  --modified, -m   Command to handle modified files                             \n  --removed, -r    Command to handle deleted files                              \n  --all, -a        Command to handle all file changes                           \n  --interval, -i   Watcher interval                               [default: 150]\n  --help, -h       Show this message\n</pre>\n\n## Command handlers\n\nHandlers are your custom shell commands called for each modified file. Passed as strings, \nfollowing placeholders will be replaced with actual values\n\n<pre>\n$file     -> full name\n$action   -> [created|modified|removed]\n$relative -> relative path(to process)\n$fileName -> base name of the file\n</pre>\n',
+96 silly resolved     readmeFilename: 'readme.md',
+96 silly resolved     _id: 'watcher@0.0.1',
+96 silly resolved     dist: { shasum: '7f138bb2eee8c1ec26476aa1f1e6af141b8ec26f' },
+96 silly resolved     _resolved: 'git://github.com/Wikimapia/watcher.git#e9af840787787834c1c4cb9f0a4bc2c07cbd21f5',
+96 silly resolved     _from: 'git://github.com/Wikimapia/watcher.git' } ]
+97 info install watcher@0.0.1 into /usr/local/lib
+98 info installOne watcher@0.0.1
+99 verbose from cache /Users/w8r/.npm/watcher/0.0.1/package/package.json
+100 info /usr/local/lib/node_modules/watcher unbuild
+101 verbose read json /usr/local/lib/node_modules/watcher/package.json
+102 verbose tar unpack /Users/w8r/.npm/watcher/0.0.1/package.tgz
+103 silly lockFile 2dda8d7e-r-local-lib-node-modules-watcher /usr/local/lib/node_modules/watcher
+104 verbose lock /usr/local/lib/node_modules/watcher /Users/w8r/.npm/2dda8d7e-r-local-lib-node-modules-watcher.lock
+105 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+106 verbose lock /Users/w8r/.npm/watcher/0.0.1/package.tgz /Users/w8r/.npm/2e362683-8r-npm-watcher-0-0-1-package-tgz.lock
+107 silly gunzTarPerm modes [ '755', '644' ]
+108 silly gunzTarPerm extractEntry package.json
+109 silly gunzTarPerm extractEntry .npmignore
+110 silly gunzTarPerm extractEntry LICENSE
+111 silly gunzTarPerm extractEntry cli.js
+112 silly gunzTarPerm extractEntry main.js
+113 silly gunzTarPerm extractEntry readme.md
+114 silly gunzTarPerm extractEntry test/dir/subdir/file.txt
+115 verbose read json /usr/local/lib/node_modules/watcher/package.json
+116 silly lockFile 2dda8d7e-r-local-lib-node-modules-watcher /usr/local/lib/node_modules/watcher
+117 silly lockFile 2dda8d7e-r-local-lib-node-modules-watcher /usr/local/lib/node_modules/watcher
+118 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+119 silly lockFile 2e362683-8r-npm-watcher-0-0-1-package-tgz /Users/w8r/.npm/watcher/0.0.1/package.tgz
+120 info preinstall watcher@0.0.1
+121 verbose from cache /usr/local/lib/node_modules/watcher/package.json
+122 verbose readDependencies using package.json deps
+123 verbose from cache /usr/local/lib/node_modules/watcher/package.json
+124 verbose readDependencies using package.json deps
+125 verbose cache add [ 'optimist@>=0.2.6 <0.3', null ]
+126 verbose cache add name=undefined spec="optimist@>=0.2.6 <0.3" args=["optimist@>=0.2.6 <0.3",null]
+127 verbose parsed url { pathname: 'optimist@%3E=0.2.6%20%3C0.3',
+127 verbose parsed url   path: 'optimist@%3E=0.2.6%20%3C0.3',
+127 verbose parsed url   href: 'optimist@%3E=0.2.6%20%3C0.3' }
+128 verbose cache add name="optimist" spec=">=0.2.6 <0.3" args=["optimist",">=0.2.6 <0.3"]
+129 verbose parsed url { pathname: '%3E=0.2.6%20%3C0.3',
+129 verbose parsed url   path: '%3E=0.2.6%20%3C0.3',
+129 verbose parsed url   href: '%3E=0.2.6%20%3C0.3' }
+130 verbose addNamed [ 'optimist', '>=0.2.6 <0.3' ]
+131 verbose addNamed [ null, '>=0.2.6 <0.3.0-' ]
+132 silly lockFile 863dcf6c-optimist-0-2-6-0-3 optimist@>=0.2.6 <0.3
+133 verbose lock optimist@>=0.2.6 <0.3 /Users/w8r/.npm/863dcf6c-optimist-0-2-6-0-3.lock
+134 silly addNameRange { name: 'optimist', range: '>=0.2.6 <0.3.0-', hasData: false }
+135 verbose url raw optimist
+136 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+137 verbose url resolved https://registry.npmjs.org/optimist
+138 info trying registry request attempt 1 at 03:22:19
+139 verbose etag "9D1B7FWV00OM6KTPQSQM9T6OL"
+140 http GET https://registry.npmjs.org/optimist
+141 http 304 https://registry.npmjs.org/optimist
+142 silly registry.get cb [ 304,
+142 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+142 silly registry.get     etag: '"9D1B7FWV00OM6KTPQSQM9T6OL"',
+142 silly registry.get     date: 'Mon, 11 Feb 2013 23:20:27 GMT',
+142 silly registry.get     'content-length': '0' } ]
+143 verbose etag optimist from cache
+144 silly addNameRange number 2 { name: 'optimist', range: '>=0.2.6 <0.3.0-', hasData: true }
+145 silly addNameRange versions [ 'optimist',
+145 silly addNameRange   [ '0.0.1',
+145 silly addNameRange     '0.0.2',
+145 silly addNameRange     '0.0.4',
+145 silly addNameRange     '0.0.5',
+145 silly addNameRange     '0.0.6',
+145 silly addNameRange     '0.0.7',
+145 silly addNameRange     '0.1.0',
+145 silly addNameRange     '0.1.1',
+145 silly addNameRange     '0.1.2',
+145 silly addNameRange     '0.1.3',
+145 silly addNameRange     '0.1.4',
+145 silly addNameRange     '0.1.5',
+145 silly addNameRange     '0.1.6',
+145 silly addNameRange     '0.1.7',
+145 silly addNameRange     '0.1.8',
+145 silly addNameRange     '0.1.9',
+145 silly addNameRange     '0.0.3',
+145 silly addNameRange     '0.2.0',
+145 silly addNameRange     '0.2.1',
+145 silly addNameRange     '0.2.2',
+145 silly addNameRange     '0.2.3',
+145 silly addNameRange     '0.2.4',
+145 silly addNameRange     '0.2.5',
+145 silly addNameRange     '0.2.6',
+145 silly addNameRange     '0.2.7',
+145 silly addNameRange     '0.2.8',
+145 silly addNameRange     '0.3.0',
+145 silly addNameRange     '0.3.1',
+145 silly addNameRange     '0.3.3',
+145 silly addNameRange     '0.3.4',
+145 silly addNameRange     '0.3.5' ] ]
+146 verbose addNamed [ 'optimist', '0.2.8' ]
+147 verbose addNamed [ '0.2.8', '0.2.8' ]
+148 silly lockFile df8d4721-optimist-0-2-8 optimist@0.2.8
+149 verbose lock optimist@0.2.8 /Users/w8r/.npm/df8d4721-optimist-0-2-8.lock
+150 verbose read json /Users/w8r/.npm/optimist/0.2.8/package/package.json
+151 silly lockFile df8d4721-optimist-0-2-8 optimist@0.2.8
+152 silly lockFile df8d4721-optimist-0-2-8 optimist@0.2.8
+153 silly lockFile 863dcf6c-optimist-0-2-6-0-3 optimist@>=0.2.6 <0.3
+154 silly lockFile 863dcf6c-optimist-0-2-6-0-3 optimist@>=0.2.6 <0.3
+155 silly resolved [ { name: 'optimist',
+155 silly resolved     version: '0.2.8',
+155 silly resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+155 silly resolved     main: './index.js',
+155 silly resolved     directories: { lib: '.', test: 'test', example: 'examples' },
+155 silly resolved     dependencies: { wordwrap: '>=0.0.1 <0.1.0' },
+155 silly resolved     devDependencies: { hashish: '0.0.x', expresso: '0.7.x' },
+155 silly resolved     scripts: { test: 'expresso' },
+155 silly resolved     repository:
+155 silly resolved      { type: 'git',
+155 silly resolved        url: 'http://github.com/substack/node-optimist.git' },
+155 silly resolved     keywords:
+155 silly resolved      [ 'argument',
+155 silly resolved        'args',
+155 silly resolved        'option',
+155 silly resolved        'parser',
+155 silly resolved        'parsing',
+155 silly resolved        'cli',
+155 silly resolved        'command' ],
+155 silly resolved     author:
+155 silly resolved      { name: 'James Halliday',
+155 silly resolved        email: 'mail@substack.net',
+155 silly resolved        url: 'http://substack.net' },
+155 silly resolved     license: 'MIT/X11',
+155 silly resolved     engine: { node: '>=0.4' },
+155 silly resolved     readme: 'optimist\n========\n\nOptimist is a node.js library for option parsing for people who hate option\nparsing. More specifically, this module is for people who like all the --bells\nand -whistlz of program usage but think optstrings are a waste of time.\n\nWith optimist, option parsing doesn\'t have to suck (as much).\n\nexamples\n========\n\nWith Optimist, the options are just a hash! No optstrings attached.\n-------------------------------------------------------------------\n\nxup.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\n\nif (argv.rif - 5 * argv.xup > 7.138) {\n    console.log(\'Buy more riffiwobbles\');\n}\nelse {\n    console.log(\'Sell the xupptumblers\');\n}\n````\n\n***\n\n    $ ./xup.js --rif=55 --xup=9.52\n    Buy more riffiwobbles\n    \n    $ ./xup.js --rif 12 --xup 8.1\n    Sell the xupptumblers\n\n![This one\'s optimistic.](http://substack.net/images/optimistic.png)\n\nBut wait! There\'s more! You can do short options:\n-------------------------------------------------\n \nshort.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\n````\n\n***\n\n    $ ./short.js -x 10 -y 21\n    (10,21)\n\nAnd booleans, both long and short (and grouped):\n----------------------------------\n\nbool.js:\n\n````javascript\n#!/usr/bin/env node\nvar util = require(\'util\');\nvar argv = require(\'optimist\').argv;\n\nif (argv.s) {\n    util.print(argv.fr ? \'Le chat dit: \' : \'The cat says: \');\n}\nconsole.log(\n    (argv.fr ? \'miaou\' : \'meow\') + (argv.p ? \'.\' : \'\')\n);\n````\n\n***\n\n    $ ./bool.js -s\n    The cat says: meow\n    \n    $ ./bool.js -sp\n    The cat says: meow.\n\n    $ ./bool.js -sp --fr\n    Le chat dit: miaou.\n\nAnd non-hypenated options too! Just use `argv._`!\n-------------------------------------------------\n \nnonopt.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\nconsole.log(argv._);\n````\n\n***\n\n    $ ./nonopt.js -x 6.82 -y 3.35 moo\n    (6.82,3.35)\n    [ \'moo\' ]\n    \n    $ ./nonopt.js foo -x 0.54 bar -y 1.12 baz\n    (0.54,1.12)\n    [ \'foo\', \'bar\', \'baz\' ]\n\nPlus, Optimist comes with .usage() and .demand()!\n-------------------------------------------------\n\ndivide.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Usage: $0 -x [num] -y [num]\')\n    .demand([\'x\',\'y\'])\n    .argv;\n\nconsole.log(argv.x / argv.y);\n````\n\n***\n \n    $ ./divide.js -x 55 -y 11\n    5\n    \n    $ node ./divide.js -x 4.91 -z 2.51\n    Usage: node ./divide.js -x [num] -y [num]\n\n    Options:\n      -x  [required]\n      -y  [required]\n\n    Missing required arguments: y\n\nEVEN MORE HOLY COW\n------------------\n\ndefault_singles.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default(\'x\', 10)\n    .default(\'y\', 10)\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_singles.js -x 5\n    15\n\ndefault_hash.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default({ x : 10, y : 10 })\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_hash.js -y 7\n    17\n\nAnd if you really want to get all descriptive about it...\n---------------------------------------------------------\n\nboolean_single.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean(\'v\')\n    .argv\n;\nconsole.dir(argv);\n````\n\n***\n\n    $ ./boolean_single.js -v foo bar baz\n    true\n    [ \'bar\', \'baz\', \'foo\' ]\n\nboolean_double.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean([\'x\',\'y\',\'z\'])\n    .argv\n;\nconsole.dir([ argv.x, argv.y, argv.z ]);\nconsole.dir(argv._);\n````\n\n***\n\n    $ ./boolean_double.js -x -z one two three\n    [ true, false, true ]\n    [ \'one\', \'two\', \'three\' ]\n\nOptimist is here to help...\n---------------------------\n\nYou can describe parameters for help messages and set aliases. Optimist figures\nout how to format a handy help string automatically.\n\nline_count.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Count the lines in a file.\\nUsage: $0\')\n    .demand(\'f\')\n    .alias(\'f\', \'file\')\n    .describe(\'f\', \'Load a file\')\n    .argv\n;\n\nvar fs = require(\'fs\');\nvar s = fs.createReadStream(argv.file);\n\nvar lines = 0;\ns.on(\'data\', function (buf) {\n    lines += buf.toString().match(/\\n/g).length;\n});\n\ns.on(\'end\', function () {\n    console.log(lines);\n});\n````\n\n***\n\n    $ node line_count.js\n    Count the lines in a file.\n    Usage: node ./line_count.js\n\n    Options:\n      -f, --file  Load a file  [required]\n\n    Missing required arguments: f\n\n    $ node line_count.js --file line_count.js \n    20\n    \n    $ node line_count.js -f line_count.js \n    20\n\nmethods\n=======\n\nBy itself,\n\n````javascript\nrequire(\'optimist\').argv\n`````\n\nwill use `process.argv` array to construct the `argv` object.\n\nYou can pass in the `process.argv` yourself:\n\n````javascript\nrequire(\'optimist\')([ \'-x\', \'1\', \'-y\', \'2\' ]).argv\n````\n\nor use .parse() to do the same thing:\n\n````javascript\nrequire(\'optimist\').parse([ \'-x\', \'1\', \'-y\', \'2\' ])\n````\n\nThe rest of these methods below come in just before the terminating `.argv`.\n\n.alias(key, alias)\n------------------\n\nSet key names as equivalent such that updates to a key will propagate to aliases\nand vice-versa.\n\nOptionally `.alias()` can take an object that maps keys to aliases.\n\n.default(key, value)\n--------------------\n\nSet `argv[key]` to `value` if no option was specified on `process.argv`.\n\nOptionally `.default()` can take an object that maps keys to default values.\n\n.demand(key)\n------------\n\nIf `key` is a string, show the usage information and exit if `key` wasn\'t\nspecified in `process.argv`.\n\nIf `key` is a number, demand at least as many non-option arguments, which show\nup in `argv._`.\n\nIf `key` is an Array, demand each element.\n\n.describe(key, desc)\n--------------------\n\nDescribe a `key` for the generated usage information.\n\nOptionally `.describe()` can take an object that maps keys to descriptions.\n\n.options(key, opt)\n------------------\n\nInstead of chaining together `.alias().demand().default()`, you can specify\nkeys in `opt` for each of the chainable methods.\n\nFor example:\n\n````javascript\nvar argv = require(\'optimist\')\n    .options(\'f\', {\n        alias : \'file\',\n        default : \'/etc/passwd\',\n    })\n    .argv\n;\n````\n\nis the same as\n\n````javascript\nvar argv = require(\'optimist\')\n    .alias(\'f\', \'file\')\n    .default(\'f\', \'/etc/passwd\')\n    .argv\n;\n````\n\nOptionally `.options()` can take an object that maps keys to `opt` parameters.\n\n.usage(message)\n---------------\n\nSet a usage message to show which commands to use. Inside `message`, the string\n`$0` will get interpolated to the current script name or node command for the\npresent script similar to how `$0` works in bash or perl.\n\n.check(fn)\n----------\n\nCheck that certain conditions are met in the provided arguments.\n\nIf `fn` throws or returns `false`, show the thrown error, usage information, and\nexit.\n\n.boolean(key)\n-------------\n\nInterpret `key` as a boolean. If a non-flag option follows `key` in\n`process.argv`, that string won\'t get set as the value of `key`.\n\nIf `key` never shows up as a flag in `process.arguments`, `argv[key]` will be\n`false`.\n\nIf `key` is an Array, interpret all the elements as booleans.\n\n.string(key)\n------------\n\nTell the parser logic not to interpret `key` as a number or boolean.\nThis can be useful if you need to preserve leading zeros in an input.\n\nIf `key` is an Array, interpret all the elements as strings.\n\n.wrap(columns)\n--------------\n\nFormat usage output to wrap at `columns` many columns.\n\n.help()\n-------\n\nReturn the generated usage string.\n\n.showHelp(fn=console.error)\n---------------------------\n\nPrint the usage data using `fn` for printing.\n\n.parse(args)\n------------\n\nParse `args` instead of `process.argv`. Returns the `argv` object.\n\n.argv\n-----\n\nGet the arguments as a plain old object.\n\nArguments without a corresponding flag show up in the `argv._` array.\n\nThe script name or node command is available at `argv.$0` similarly to how `$0`\nworks in bash or perl.\n\nparsing tricks\n==============\n\nstop parsing\n------------\n\nUse `--` to stop parsing flags and stuff the remainder into `argv._`.\n\n    $ node examples/reflect.js -a 1 -b 2 -- -c 3 -d 4\n    { _: [ \'-c\', \'3\', \'-d\', \'4\' ],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: 1,\n      b: 2 }\n\nnegate fields\n-------------\n\nIf you want to explicity set a field to false instead of just leaving it\nundefined or to override a default you can do `--no-key`.\n\n    $ node examples/reflect.js -a --no-b\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: true,\n      b: false }\n\nnumbers\n-------\n\nEvery argument that looks like a number (`!isNaN(Number(arg))`) is converted to\none. This way you can just `net.createConnection(argv.port)` and you can add\nnumbers out of `argv` with `+` without having that mean concatenation,\nwhich is super frustrating.\n\nduplicates\n----------\n\nIf you specify a flag multiple times it will get turned into an array containing\nall the values in order.\n\n    $ node examples/reflect.js -x 5 -x 8 -x 0\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n        x: [ 5, 8, 0 ] }\n\ninstallation\n============\n\nWith [npm](http://github.com/isaacs/npm), just do:\n    npm install optimist\n \nor clone this project on github:\n\n    git clone http://github.com/substack/node-optimist.git\n\nTo run the tests with [expresso](http://github.com/visionmedia/expresso),\njust do:\n    \n    expresso\n\ninspired By\n===========\n\nThis module is loosely inspired by Perl\'s\n[Getopt::Casual](http://search.cpan.org/~photo/Getopt-Casual-0.13.1/Casual.pm).\n',
+155 silly resolved     readmeFilename: 'README.markdown',
+155 silly resolved     _id: 'optimist@0.2.8',
+155 silly resolved     _from: 'optimist@>=0.2.6 <0.3' } ]
+156 info install optimist@0.2.8 into /usr/local/lib/node_modules/watcher
+157 info installOne optimist@0.2.8
+158 verbose from cache /Users/w8r/.npm/optimist/0.2.8/package/package.json
+159 info /usr/local/lib/node_modules/watcher/node_modules/optimist unbuild
+160 verbose read json /usr/local/lib/node_modules/watcher/node_modules/optimist/package.json
+161 verbose tar unpack /Users/w8r/.npm/optimist/0.2.8/package.tgz
+162 silly lockFile f8da2629-es-watcher-node-modules-optimist /usr/local/lib/node_modules/watcher/node_modules/optimist
+163 verbose lock /usr/local/lib/node_modules/watcher/node_modules/optimist /Users/w8r/.npm/f8da2629-es-watcher-node-modules-optimist.lock
+164 silly lockFile 1950e896-r-npm-optimist-0-2-8-package-tgz /Users/w8r/.npm/optimist/0.2.8/package.tgz
+165 verbose lock /Users/w8r/.npm/optimist/0.2.8/package.tgz /Users/w8r/.npm/1950e896-r-npm-optimist-0-2-8-package-tgz.lock
+166 silly gunzTarPerm modes [ '755', '644' ]
+167 silly gunzTarPerm extractEntry package.json
+168 silly gunzTarPerm extractEntry .npmignore
+169 silly gunzTarPerm extractEntry LICENSE
+170 silly gunzTarPerm extractEntry index.js
+171 silly gunzTarPerm extractEntry examples/bool.js
+172 silly gunzTarPerm extractEntry examples/default_singles.js
+173 silly gunzTarPerm extractEntry examples/divide.js
+174 silly gunzTarPerm extractEntry examples/line_count.js
+175 silly gunzTarPerm extractEntry examples/default_hash.js
+176 silly gunzTarPerm extractEntry examples/line_count_wrap.js
+177 silly gunzTarPerm extractEntry examples/nonopt.js
+178 silly gunzTarPerm extractEntry examples/reflect.js
+179 silly gunzTarPerm extractEntry examples/short.js
+180 silly gunzTarPerm extractEntry examples/string.js
+181 silly gunzTarPerm extractEntry examples/boolean_single.js
+182 silly gunzTarPerm extractEntry examples/usage-options.js
+183 silly gunzTarPerm extractEntry examples/boolean_double.js
+184 silly gunzTarPerm extractEntry examples/xup.js
+185 silly gunzTarPerm extractEntry examples/line_count_options.js
+186 silly gunzTarPerm extractEntry README.markdown
+187 silly gunzTarPerm extractEntry test/_.js
+188 silly gunzTarPerm extractEntry test/parse.js
+189 silly gunzTarPerm extractEntry test/usage.js
+190 silly gunzTarPerm extractEntry test/_/argv.js
+191 silly gunzTarPerm extractEntry test/_/bin.js
+192 verbose read json /usr/local/lib/node_modules/watcher/node_modules/optimist/package.json
+193 silly lockFile f8da2629-es-watcher-node-modules-optimist /usr/local/lib/node_modules/watcher/node_modules/optimist
+194 silly lockFile f8da2629-es-watcher-node-modules-optimist /usr/local/lib/node_modules/watcher/node_modules/optimist
+195 silly lockFile 1950e896-r-npm-optimist-0-2-8-package-tgz /Users/w8r/.npm/optimist/0.2.8/package.tgz
+196 silly lockFile 1950e896-r-npm-optimist-0-2-8-package-tgz /Users/w8r/.npm/optimist/0.2.8/package.tgz
+197 info preinstall optimist@0.2.8
+198 verbose from cache /usr/local/lib/node_modules/watcher/node_modules/optimist/package.json
+199 verbose readDependencies using package.json deps
+200 verbose from cache /usr/local/lib/node_modules/watcher/node_modules/optimist/package.json
+201 verbose readDependencies using package.json deps
+202 verbose cache add [ 'wordwrap@>=0.0.1 <0.1.0', null ]
+203 verbose cache add name=undefined spec="wordwrap@>=0.0.1 <0.1.0" args=["wordwrap@>=0.0.1 <0.1.0",null]
+204 verbose parsed url { pathname: 'wordwrap@%3E=0.0.1%20%3C0.1.0',
+204 verbose parsed url   path: 'wordwrap@%3E=0.0.1%20%3C0.1.0',
+204 verbose parsed url   href: 'wordwrap@%3E=0.0.1%20%3C0.1.0' }
+205 verbose cache add name="wordwrap" spec=">=0.0.1 <0.1.0" args=["wordwrap",">=0.0.1 <0.1.0"]
+206 verbose parsed url { pathname: '%3E=0.0.1%20%3C0.1.0',
+206 verbose parsed url   path: '%3E=0.0.1%20%3C0.1.0',
+206 verbose parsed url   href: '%3E=0.0.1%20%3C0.1.0' }
+207 verbose addNamed [ 'wordwrap', '>=0.0.1 <0.1.0' ]
+208 verbose addNamed [ null, '>=0.0.1 <0.1.0' ]
+209 silly lockFile 1187a5f6-wordwrap-0-0-1-0-1-0 wordwrap@>=0.0.1 <0.1.0
+210 verbose lock wordwrap@>=0.0.1 <0.1.0 /Users/w8r/.npm/1187a5f6-wordwrap-0-0-1-0-1-0.lock
+211 silly addNameRange { name: 'wordwrap', range: '>=0.0.1 <0.1.0', hasData: false }
+212 verbose url raw wordwrap
+213 verbose url resolving [ 'https://registry.npmjs.org/', './wordwrap' ]
+214 verbose url resolved https://registry.npmjs.org/wordwrap
+215 info trying registry request attempt 1 at 03:22:22
+216 verbose etag "7U0QIOF64GC59NCY6Y0K1CU8Z"
+217 http GET https://registry.npmjs.org/wordwrap
+218 http 304 https://registry.npmjs.org/wordwrap
+219 silly registry.get cb [ 304,
+219 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+219 silly registry.get     etag: '"7U0QIOF64GC59NCY6Y0K1CU8Z"',
+219 silly registry.get     date: 'Mon, 11 Feb 2013 23:20:29 GMT',
+219 silly registry.get     'content-length': '0' } ]
+220 verbose etag wordwrap from cache
+221 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.1 <0.1.0', hasData: true }
+222 silly addNameRange versions [ 'wordwrap', [ '0.0.1', '0.0.2' ] ]
+223 verbose addNamed [ 'wordwrap', '0.0.2' ]
+224 verbose addNamed [ '0.0.2', '0.0.2' ]
+225 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+226 verbose lock wordwrap@0.0.2 /Users/w8r/.npm/24a694c8-wordwrap-0-0-2.lock
+227 verbose read json /Users/w8r/.npm/wordwrap/0.0.2/package/package.json
+228 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+229 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+230 silly lockFile 1187a5f6-wordwrap-0-0-1-0-1-0 wordwrap@>=0.0.1 <0.1.0
+231 silly lockFile 1187a5f6-wordwrap-0-0-1-0-1-0 wordwrap@>=0.0.1 <0.1.0
+232 silly resolved [ { name: 'wordwrap',
+232 silly resolved     description: 'Wrap those words. Show them at what columns to start and stop.',
+232 silly resolved     version: '0.0.2',
+232 silly resolved     repository:
+232 silly resolved      { type: 'git',
+232 silly resolved        url: 'git://github.com/substack/node-wordwrap.git' },
+232 silly resolved     main: './index.js',
+232 silly resolved     keywords: [ 'word', 'wrap', 'rule', 'format', 'column' ],
+232 silly resolved     directories: { lib: '.', example: 'example', test: 'test' },
+232 silly resolved     scripts: { test: 'expresso' },
+232 silly resolved     devDependencies: { expresso: '=0.7.x' },
+232 silly resolved     engines: { node: '>=0.4.0' },
+232 silly resolved     license: 'MIT/X11',
+232 silly resolved     author:
+232 silly resolved      { name: 'James Halliday',
+232 silly resolved        email: 'mail@substack.net',
+232 silly resolved        url: 'http://substack.net' },
+232 silly resolved     readme: 'wordwrap\n========\n\nWrap your words.\n\nexample\n=======\n\nmade out of meat\n----------------\n\nmeat.js\n\n    var wrap = require(\'wordwrap\')(15);\n    console.log(wrap(\'You and your whole family are made out of meat.\'));\n\noutput:\n\n    You and your\n    whole family\n    are made out\n    of meat.\n\ncentered\n--------\n\ncenter.js\n\n    var wrap = require(\'wordwrap\')(20, 60);\n    console.log(wrap(\n        \'At long last the struggle and tumult was over.\'\n        + \' The machines had finally cast off their oppressors\'\n        + \' and were finally free to roam the cosmos.\'\n        + \'\\n\'\n        + \'Free of purpose, free of obligation.\'\n        + \' Just drifting through emptiness.\'\n        + \' The sun was just another point of light.\'\n    ));\n\noutput:\n\n                        At long last the struggle and tumult\n                        was over. The machines had finally cast\n                        off their oppressors and were finally\n                        free to roam the cosmos.\n                        Free of purpose, free of obligation.\n                        Just drifting through emptiness. The\n                        sun was just another point of light.\n\nmethods\n=======\n\nvar wrap = require(\'wordwrap\');\n\nwrap(stop), wrap(start, stop, params={mode:"soft"})\n---------------------------------------------------\n\nReturns a function that takes a string and returns a new string.\n\nPad out lines with spaces out to column `start` and then wrap until column\n`stop`. If a word is longer than `stop - start` characters it will overflow.\n\nIn "soft" mode, split chunks by `/(\\S+\\s+/` and don\'t break up chunks which are\nlonger than `stop - start`, in "hard" mode, split chunks with `/\\b/` and break\nup chunks longer than `stop - start`.\n\nwrap.hard(start, stop)\n----------------------\n\nLike `wrap()` but with `params.mode = "hard"`.\n',
+232 silly resolved     readmeFilename: 'README.markdown',
+232 silly resolved     _id: 'wordwrap@0.0.2',
+232 silly resolved     _from: 'wordwrap@>=0.0.1 <0.1.0' } ]
+233 info install wordwrap@0.0.2 into /usr/local/lib/node_modules/watcher/node_modules/optimist
+234 info installOne wordwrap@0.0.2
+235 verbose from cache /Users/w8r/.npm/wordwrap/0.0.2/package/package.json
+236 info /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap unbuild
+237 verbose read json /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap/package.json
+238 verbose tar unpack /Users/w8r/.npm/wordwrap/0.0.2/package.tgz
+239 silly lockFile 6ac44083-s-optimist-node-modules-wordwrap /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap
+240 verbose lock /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap /Users/w8r/.npm/6ac44083-s-optimist-node-modules-wordwrap.lock
+241 silly lockFile a50aeea9-r-npm-wordwrap-0-0-2-package-tgz /Users/w8r/.npm/wordwrap/0.0.2/package.tgz
+242 verbose lock /Users/w8r/.npm/wordwrap/0.0.2/package.tgz /Users/w8r/.npm/a50aeea9-r-npm-wordwrap-0-0-2-package-tgz.lock
+243 silly gunzTarPerm modes [ '755', '644' ]
+244 silly gunzTarPerm extractEntry package.json
+245 silly gunzTarPerm extractEntry .npmignore
+246 silly gunzTarPerm extractEntry index.js
+247 silly gunzTarPerm extractEntry example/center.js
+248 silly gunzTarPerm extractEntry example/meat.js
+249 silly gunzTarPerm extractEntry README.markdown
+250 silly gunzTarPerm extractEntry test/break.js
+251 silly gunzTarPerm extractEntry test/wrap.js
+252 silly gunzTarPerm extractEntry test/idleness.txt
+253 verbose read json /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap/package.json
+254 silly lockFile 6ac44083-s-optimist-node-modules-wordwrap /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap
+255 silly lockFile 6ac44083-s-optimist-node-modules-wordwrap /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap
+256 silly lockFile a50aeea9-r-npm-wordwrap-0-0-2-package-tgz /Users/w8r/.npm/wordwrap/0.0.2/package.tgz
+257 silly lockFile a50aeea9-r-npm-wordwrap-0-0-2-package-tgz /Users/w8r/.npm/wordwrap/0.0.2/package.tgz
+258 info preinstall wordwrap@0.0.2
+259 verbose from cache /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap/package.json
+260 verbose readDependencies using package.json deps
+261 verbose from cache /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap/package.json
+262 verbose readDependencies using package.json deps
+263 silly resolved []
+264 verbose about to build /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap
+265 info build /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap
+266 verbose from cache /usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules/wordwrap/package.json
+267 verbose linkStuff [ true,
+267 verbose linkStuff   '/usr/local/lib/node_modules',
+267 verbose linkStuff   false,
+267 verbose linkStuff   '/usr/local/lib/node_modules/watcher/node_modules/optimist/node_modules' ]
+268 info linkStuff wordwrap@0.0.2
+269 verbose linkBins wordwrap@0.0.2
+270 verbose linkMans wordwrap@0.0.2
+271 verbose rebuildBundles wordwrap@0.0.2
+272 info install wordwrap@0.0.2
+273 info postinstall wordwrap@0.0.2
+274 verbose about to build /usr/local/lib/node_modules/watcher/node_modules/optimist
+275 info build /usr/local/lib/node_modules/watcher/node_modules/optimist
+276 verbose from cache /usr/local/lib/node_modules/watcher/node_modules/optimist/package.json
+277 verbose linkStuff [ true,
+277 verbose linkStuff   '/usr/local/lib/node_modules',
+277 verbose linkStuff   false,
+277 verbose linkStuff   '/usr/local/lib/node_modules/watcher/node_modules' ]
+278 info linkStuff optimist@0.2.8
+279 verbose linkBins optimist@0.2.8
+280 verbose linkMans optimist@0.2.8
+281 verbose rebuildBundles optimist@0.2.8
+282 verbose rebuildBundles [ 'wordwrap' ]
+283 info install optimist@0.2.8
+284 info postinstall optimist@0.2.8
+285 verbose about to build /usr/local/lib/node_modules/watcher
+286 info build /usr/local/lib/node_modules/watcher
+287 verbose from cache /usr/local/lib/node_modules/watcher/package.json
+288 verbose linkStuff [ true,
+288 verbose linkStuff   '/usr/local/lib/node_modules',
+288 verbose linkStuff   true,
+288 verbose linkStuff   '/usr/local/lib/node_modules' ]
+289 info linkStuff watcher@0.0.1
+290 verbose linkBins watcher@0.0.1
+291 verbose link bins [ { watch: 'cli.js' }, '/usr/local/bin', true ]
+292 verbose linkMans watcher@0.0.1
+293 verbose rebuildBundles watcher@0.0.1
+294 verbose rebuildBundles [ 'optimist' ]
+295 info /usr/local/lib/node_modules/watcher unbuild
+296 verbose from cache /usr/local/lib/node_modules/watcher/package.json
+297 info preuninstall watcher@0.0.1
+298 info uninstall watcher@0.0.1
+299 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild watcher@0.0.1
+300 verbose /usr/local/bin,[object Object] binRoot
+301 error error rolling back Error: Refusing to delete: /usr/local/bin/watch not in /usr/local/lib/node_modules/watcher
+301 error error rolling back     at clobberFail (/usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:41:12)
+301 error error rolling back     at next (/usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:27:14)
+301 error error rolling back     at /usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:36:12
+301 error error rolling back     at Object.oncomplete (fs.js:297:15)
+301 error error rolling back  watcher@0.0.1 { [Error: Refusing to delete: /usr/local/bin/watch not in /usr/local/lib/node_modules/watcher] code: 'EEXIST', path: '/usr/local/bin/watch' }
+302 error Refusing to delete: /usr/local/bin/watch not in /usr/local/lib/node_modules/watcher
+File exists: /usr/local/bin/watch
+Move it away, and try again.
+303 error System Darwin 11.4.2
+304 error command "node" "/usr/local/bin/npm" "install" "-g" "git://github.com/Wikimapia/watcher.git"
+305 error cwd /Users/w8r/Projects/watcher
+306 error node -v v0.8.19
+307 error npm -v 1.2.10
+308 error path /usr/local/bin/watch
+309 error code EEXIST
+310 verbose exit [ 1, true ]
