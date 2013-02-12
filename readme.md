@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Module is aimed to make easier the simple automation of watching of directory trees easier.
+Module is aimed to make easier the simple automation of watching of directory trees.
 
 ## Usage
 
