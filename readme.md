@@ -18,7 +18,7 @@ Module is aimed to make easier the simple automation of watching of directory tr
 
 Args:
 <pre>
-    --directory, -d  Define the root directory to watch, if this is not defined
+  --directory, -d  Define the root directory to watch, if this is not defined
                    the program will use the current working directory.
   --created, -c    Command to handle created files                              
   --modified, -m   Command to handle modified files                             
