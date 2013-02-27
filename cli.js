@@ -48,9 +48,10 @@ var wrapper = function(action, cmd) {
         return function(file) {
             var command = (cmd || '');
 
+            command = command.replace(/\$basename/g, path.basename(file, path.extname(file)));
+            command = command.replace(/\$filename/g, path.basename(file));
             command = command.replace(/\$file/g, file);
             command = command.replace(/\$action/g, action);
-            command = command.replace(/\$filename/g, path.basename(file));
             command = command.replace(/\$relative/g, path.relative(argv.directory, file));
 
             exec(command, function(err, stdout, stderr) {
